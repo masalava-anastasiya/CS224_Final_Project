@@ -1,3 +1,6 @@
 
 # large data
 mimic_preprocessed/disease_edges.csv
+
+# local data (kept out of repo)
+mimic_preprocessed/

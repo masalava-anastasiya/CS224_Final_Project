@@ -23,7 +23,8 @@ Health conditions often occur in sequences rather than isolation. Modeling disea
 ## Data
 
 - **Source**: MIMIC‑IV EHR (Beth Israel Deaconess Medical Center, 2008–2019). Access requires credentialing via PhysioNet.
-- **This repo** includes preprocessed CSVs (`mimic_preprocessed/`) sufficient to run the notebooks:
+- **Preprocessed data (download)**: Please download `disease_nodes.csv` and `disease_edges.csv` from the Google Drive folder and place them locally (e.g., `mimic_preprocessed/`) before running the notebooks:
+  - Google Drive: [Disease graph CSVs](https://drive.google.com/drive/folders/1lEbimz8E2Hk2ii0a7y6qqnS-liNDJ8YI?usp=share_link)
   - Nodes: unique ICD codes.
   - Edges: directed disease transitions with timestamps, constructed by ordering patient diagnoses chronologically and adding `A → B` when `B` occurs after `A`.
 ---
