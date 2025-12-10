@@ -9,11 +9,6 @@ Health conditions often occur in sequences rather than isolation. Modeling disea
 ---
 
 ## Repository Structure
-
-- `mimic_preprocessed/`
-  - `disease_nodes.csv` — single column `disease_code` listing unique ICD codes used as node IDs.
-  - `disease_edges.csv` — directed, time‑ordered edge list with columns:
-    - `src` (ICD code), `dst` (ICD code), `timestamp` (ISO‑like string; MIMIC uses shifted anchor years, e.g., 2160–2180).
 - `cs224w_baselines.ipynb` — Random, Most Frequent Next Hop, Degree‑Aware baselines.
 - `TGN_model.ipynb` — Temporal Graph Network (TGN) training/evaluation.
 - `TGAT_model.ipynb` — TGAT‑style model (Transformer attention over temporal neighbors) training/evaluation.
